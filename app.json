@@ -1,0 +1,40 @@
+{
+    "name": "xnxx-dl-wabot",
+    "description": "xnxx download bot",
+    "stack": "container",
+    "env": {
+        "_XNXX_SESSION": {
+            "description": "wa session",
+            "required": true
+        },
+        "HANDLERS": {
+            "description": "For commands.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+        "HEROKU": {
+            "description": "If it is running in Heroku, type true.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku API Key.",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku APP Name.",
+            "required": true
+        },
+        "WORK_TYPE": {
+            "description": "public or private or both",
+            "required": true,
+            "value": "both"
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
