@@ -1,0 +1,40 @@
+{
+  "name": "xnxx-dl-wa-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./xnxx/xnxx.js",
+  "scripts": {
+    "start": "supervisor -s xnxx.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravindu01manoj/Sew-Queen.git"
+  },
+  "author": "Ravindu",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ravindu01manoj/Sew-Queen/issues"
+  },
+  "homepage": "https://github.com/ravindu01manoj/Sew-Queen#readme",
+  "dependencies": {
+    "xnxx-dl-wa": "*",
+    "cheerio": "^1.0.0-rc.5",
+    "chalk": "4.1.0",
+    "axios": ">=0.21.2",
+    "@adiwajshing/baileys": "3.5.3",
+    "fs-extra": "^9.1.0",
+    "heroku-client": "^3.1.0",
+    "blocked-s": "*",
+    "js-ffmpeg": "0.0.26",
+    "file-type": "^16.5.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "jsdom": "^16.6.0",
+    "node-fetch": "^2.6.1",
+    "node-tesseract-ocr": "^2.0.0",
+    "simple-git": "^2.37.0",
+    "sequelize": "6.5.1",
+    "cookie": "^0.4.1",
+    "sqlite3": "5.0.0",
+    "got": "^11.8.2"
+  }
+}
