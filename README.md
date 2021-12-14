@@ -7,5 +7,4 @@
 # [Deploy](https://dashboard.heroku.com/new?button-url=https://github.com/ravindu01manoj/xnxx-dl-wabot&template=https://github.com/ravindu01manoj/xnxx-dl-wabot)
 
 ***
-
-Qr - soon
+# [Scan Qr](https://replit.com/@RavinduManoj/XNXX-DOWNLOAD-Whatsapp-BOT)
