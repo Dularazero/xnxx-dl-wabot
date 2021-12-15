@@ -11,7 +11,7 @@ if (!Date.now) {Date.now = function () {return new Date().getTime();}}
 Array.prototype.remove = function () {var what, a = arguments,L = a.length,ax; while (L && this.length) {what = a[--L];while ((ax = this.indexOf(what)) !== -1) {this.splice(ax, 1);}}; return this;};
 async function xnxxWaBot() {
         const webxnx = await XnxxHub.webxnxx();await xnxxconfig.DATABASE.sync();var StrSes_Db = await XnxxWaBotDB.findAll({where: {info: 'StringSession'}});
-        const XnxxData = new WAConnection();XnxxData.version = webxnx;let Session = new StringSession();XnxxData.logger.level = xnxxconfig.DEBUG ? 'debug' : 'warn';
+        const XnxxData = new WAConnection();XnxxData.version = webxnx;let Session = new StringSession();XnxxData.logger.level = xnxxconfig.DEBUG ? 'debug' : 'warn';await XnxxHub.xd(XnxxData);
         var XnDb; if (StrSes_Db.length < 1) { XnDb = true; XnxxData.loadAuthInfo(Session.deCrypt(xnxxconfig.SESSION));} else if (StrSes_Db[0].dataValues.value !== xnxxconfig.SESSION) { XnDb = true; XnxxData.loadAuthInfo(Session.deCrypt(xnxxconfig.SESSION));} else { XnxxData.loadAuthInfo(Session.deCrypt(StrSes_Db[0].dataValues.value));}
         XnxxData.on('credentials-updated', async () => {let authInfo = XnxxData.base64EncodedAuthInfo();if (StrSes_Db.length < 1) {await XnxxWaBotDB.create({info: "StringSession",value: Session.createStringSession(authInfo)})} else {await StrSes_Db[0].update({value: Session.createStringSession(authInfo)})}})
         XnxxData.on('connecting', async () => {console.log('LOGIN......');});
