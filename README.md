@@ -8,3 +8,8 @@
 
 ***
 # [Scan Qr](https://replit.com/@RavinduManoj/XNXX-DOWNLOAD-Whatsapp-BOT)
+
+
+<div align="center"><br> <img src="https://profile-counter.glitch.me/ravindu01manoj/count.svg" /><br>Profile Viewers</div>
+
+<div align="center"><br> <img src="https://profile-counter.glitch.me/ravindu01manoj-xnxx/count.svg" /><br>Repo Viewers</div>
