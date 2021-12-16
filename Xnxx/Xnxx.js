@@ -19,7 +19,7 @@ XnxxWA.IntroduceCMD({pattern: 'xnxx ?(.*)', fromMe: true},( async (dlxnxx, input
 if(xnxxconfig.WORKTYPE !== 'public') return;
 var Xnxxreg = /https:\/\/www\.xnxx\.com\/video/
 if(Xnxxreg.test(input[1]) || input[1].includes('/-/')) {
-await xnxxVideoDownloader(dlxnxx, input)
+await XnxxHub.xnxxVideoDownloader(dlxnxx, input)
 } else {
 return await dlxnxx.client.sendMessage(dlxnxx.jid, 'Need Xnxx Video Link', MessageType.text);
 }
