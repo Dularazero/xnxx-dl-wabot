@@ -8,16 +8,6 @@
             "description": "wa session",
             "required": true
         },
-        "HANDLERS": {
-            "description": "For commands.",
-            "required": true,
-            "value": "^[.!;]"
-        },
-        "HEROKU": {
-            "description": "If it is running in Heroku, type true.",
-            "required": true,
-            "value": "true"
-        },
         "HEROKU_API_KEY": {
             "description": "Heroku API Key.",
             "required": true
