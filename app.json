@@ -27,9 +27,9 @@
             "required": true
         },
         "WORK_TYPE": {
-            "description": "public or private or both",
+            "description": "public or private",
             "required": true,
-            "value": "both"
+            "value": "public"
         }
     },
     "addons": [{
