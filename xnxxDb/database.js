@@ -1,17 +1,6 @@
-/* Codded by @Ravindu Manoj
-
-Telegram: t.me/RavinduManoj
-Facebook: https://www.facebook.com/ravindu.manoj.79
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-Whats bot - Ravindu Manoj
-*/
-
 
 let Detkails = require('xnxx-dl-wa');
-let Details = Detkails.config
+let Details = Detkails.xnxxconfig
 const { DataTypes } = require('sequelize');
 
 const PluginDB = Details.DATABASE.define('Plugin', {
