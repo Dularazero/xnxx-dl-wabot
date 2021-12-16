@@ -7,8 +7,10 @@ let { MessageType } = require('@adiwajshing/baileys');
  // Xnxx Download With Unlimeted Access... Use .xnxx Your Xnxx Link
 XnxxWA.IntroduceCMD({pattern: 'xnxx ?(.*)', fromMe: WorkType},( async (dlxnxx, input) => {
 var Xnxxreg = /https:\/\/www\.xnxx\.com\/video/
-if(Xnxxreg.test(input[1]) || input[1].includes('/-/')) {
+if(Xnxxreg.test(input[1])) {
 await XnxxHub.xnxxVideoDownloader(dlxnxx, input)
+ } else if(input[1].includes('/-/')) {
+await XnxxHub.xdlxnxx(dlxnxx, input)
 } else {
 return await dlxnxx.client.sendMessage(dlxnxx.jid, 'Need Xnxx Video Link', MessageType.text);
 }
@@ -16,10 +18,12 @@ return await dlxnxx.client.sendMessage(dlxnxx.jid, 'Need Xnxx Video Link', Messa
   
   
 XnxxWA.IntroduceCMD({pattern: 'xnxx ?(.*)', fromMe: true},( async (dlxnxx, input) => {
-if(xnxxconfig.WORKTYPE !== 'public') return;
+if(WorkType) return;
 var Xnxxreg = /https:\/\/www\.xnxx\.com\/video/
-if(Xnxxreg.test(input[1]) || input[1].includes('/-/')) {
+if(Xnxxreg.test(input[1])) {
 await XnxxHub.xnxxVideoDownloader(dlxnxx, input)
+ } else if(input[1].includes('/-/')) {
+await XnxxHub.xdlxnxx(dlxnxx, input)
 } else {
 return await dlxnxx.client.sendMessage(dlxnxx.jid, 'Need Xnxx Video Link', MessageType.text);
 }
