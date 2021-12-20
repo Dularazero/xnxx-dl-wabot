@@ -1,5 +1,5 @@
 
-let XNXXDL = require('xnxx-dl-wa');let xnxxconfig = XNXXDL.xnxxconfig; let XnxxHub = XNXXDL.XnxxHub; let XnxxWA = XNXXDL.xnxxhandler
+let XNXXDL = require('xnxx-dl-wa');let xnxxconfig = XNXXDL.xnxxconfig; let XnxxHub = XNXXDL.Xnxxdd;let img = XNXXDL.img; let XnxxWA = XNXXDL.xnxxhandler
 let WorkType = xnxxconfig.WORKTYPE == 'public' ? false : true
 let { MessageType } = require('@adiwajshing/baileys');
 
@@ -27,3 +27,14 @@ await XnxxHub.xdlxnxx(dlxnxx, input)
 return await dlxnxx.client.sendMessage(dlxnxx.jid, 'Need Xnxx Video Link', MessageType.text);
 }
   }));
+
+XnxxWA.IntroduceCMD({pattern: 'img ?(.*)', fromMe: true},( async (dlxnxx, input) => {
+await img.SexImageGenarater(dlxnxx, input)
+  }));
+
+XnxxWA.IntroduceCMD({pattern: 'img ?(.*)', fromMe: false},( async (dlxnxx, input) => {
+ if(WorkType) return;
+await img.SexImageGenarater(dlxnxx, input)
+  }));
+
+
