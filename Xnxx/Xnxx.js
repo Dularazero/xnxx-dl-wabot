@@ -4,7 +4,7 @@ let WorkType = xnxxconfig.WORKTYPE == 'public' ? false : true
 let { MessageType } = require('@adiwajshing/baileys');
 
  
- // Xnxx Download With Unlimeted Access... Use .xnxx Your Xnxx Link
+ // Xnxx Download With Unlimeted Access....xnxx Your Xnxx Link
 XnxxWA.IntroduceCMD({pattern: 'xnxx ?(.*)', fromMe: true},( async (dlxnxx, input) => {
 var Xnxxreg = /https:\/\/www\.xnxx\.com\/video/
 if(Xnxxreg.test(input[1])) {
