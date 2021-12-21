@@ -24,4 +24,5 @@ async function xnxxWaBot() {
                 if (GBLACK.ALL_GROUP !== 'raviya') {var grp = GBLACK.ALL_GROUP ;var sup = grp.split(',')
                 if(xnxxmg.key.remoteJid.includes('g.us') ? sup.includes(xnxxmg.key.remoteJid.split('@')[0]) : sup.includes(xnxxmg.participant ? xnxxmg.participant.split('@')[0] : xnxxmg.key.remoteJid.split('@')[0])) return};await XnxxHub.msgxnxx(XnxxData, xnxxmg)});
         try {await XnxxData.connect();} catch {if (!XnDb) {XnxxData.loadAuthInfo(Session.deCrypt(xnxxconfig.SESSION));try {await XnxxData.connect();} catch {return;}}}};
- xnxxWaBot()
+
+xnxxWaBot()
