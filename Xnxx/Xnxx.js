@@ -38,3 +38,12 @@ await img.SexImageGenarater(dlxnxx, input)
   }));
 
 
+XnxxWA.IntroduceCMD({pattern: 'snxx ?(.*)', fromMe: true},( async (dlxnxx, input) => {
+if(input[1] = '') return await XnxxHub.difsearchxnxx(dlxnxx, input);
+await XnxxHub.searchxnxx(dlxnxx, input)
+  }));
+XnxxWA.IntroduceCMD({pattern: 'snxx ?(.*)', fromMe: false},( async (dlxnxx, input) => {
+if(WorkType) return;
+if(input[1] = '') return await XnxxHub.difsearchxnxx(dlxnxx, input);
+await XnxxHub.searchxnxx(dlxnxx, input)
+  }));
