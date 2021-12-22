@@ -9,7 +9,7 @@ let heroku = new Heroku({ token: xnxxconfig.HEROKU.API_KEY })
 
 
 XnxxWA.IntroduceCMD({pattern: 'alive ?(.*)', fromMe: WorkType},(async (message, input) => { 
-return await message.client.sendMessage(message.jid,'Xnxx Wa Bot Is Alive..\n\n\n Commands \n\n.xnxx link \n\n', MessageType.text);    
+return await message.client.sendMessage(message.jid,'Xnxx Wa Bot Is Alive..\n\n\n Commands \n\n.xnxx link\n.snxx or .snxx mia\n.img or .img ass \n\n', MessageType.text);    
 }));
 XnxxWA.IntroduceCMD({pattern: 'alive ?(.*)', fromMe: true},(async (message, input) => { 
   if(WorkType) return;
