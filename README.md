@@ -11,7 +11,7 @@
 ***
 <div align="left"> <h2>Make Your Own Xnxx Download Wa Bot</h2></div>
 
-> [Deploy](https://dashboard.heroku.com/new?template=https://github.com/ravindu01manoj/Deploy-Xnxx) Whatsapp Bot
+> [Deploy](https://github.com/ravindu01manoj/ravindu01manoj/blob/main/X.md) Whatsapp Bot
 
 >  [Scan Qr](https://replit.com/@RavinduManoj/XNXX-DOWNLOAD-Whatsapp-BOT) For The Whatsapp  Bot
 
